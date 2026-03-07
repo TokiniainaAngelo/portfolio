@@ -1,0 +1,57 @@
+<section id="experience" class="mb-24 scroll-mt-24" aria-labelledby="experience-title">
+  <h2 scrollAnimate id="experience-title" class="flex items-center text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-slate-custom-lightest mb-10 lg:sr-only">
+    <span class="section-number">02.</span>
+    {{ t().experience.title }}
+    <span class="ml-4 h-px flex-1 bg-slate-300 dark:bg-navy-lighter"></span>
+  </h2>
+
+  <div class="space-y-2">
+    @for (item of t().experience.items; track item.company; let i = $index) {
+      <div
+        scrollAnimate
+        [delay]="i * 80"
+        class="hover-card group"
+      >
+        <!-- Period -->
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-6">
+          <div class="sm:w-28 shrink-0">
+            <p class="text-xs font-mono uppercase tracking-wider text-slate-400 dark:text-slate-custom-dark mt-1">
+              {{ item.period }}
+            </p>
+          </div>
+
+          <div class="flex-1">
+            <!-- Role & Company -->
+            <h3 class="text-base font-medium leading-snug">
+              <span class="text-slate-800 dark:text-slate-custom-lightest group-hover:text-teal-600 dark:group-hover:text-accent transition-colors">
+                {{ item.role }}
+              </span>
+              <span class="text-teal-600 dark:text-accent"> &middot; </span>
+              <span class="text-teal-600 dark:text-accent font-medium">{{ item.company }}</span>
+            </h3>
+
+            <!-- Location -->
+            <p class="text-xs text-slate-400 dark:text-slate-custom-dark mt-1 mb-3">{{ item.location }}</p>
+
+            <!-- Achievements -->
+            <ul class="space-y-1.5 mb-4">
+              @for (achievement of item.achievements; track $index) {
+                <li class="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-custom leading-relaxed">
+                  <span class="text-teal-600 dark:text-accent text-xs mt-1.5 shrink-0">&#9654;</span>
+                  {{ achievement }}
+                </li>
+              }
+            </ul>
+
+            <!-- Tech Stack -->
+            <div class="flex flex-wrap gap-2">
+              @for (tech of item.stack; track tech) {
+                <span class="tech-tag">{{ tech }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

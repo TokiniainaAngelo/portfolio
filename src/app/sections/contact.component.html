@@ -1,0 +1,29 @@
+<section id="contact" class="mb-24 scroll-mt-24" aria-labelledby="contact-title">
+  <h2 scrollAnimate id="contact-title" class="flex items-center text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-slate-custom-lightest mb-10 lg:sr-only">
+    <span class="section-number">04.</span>
+    {{ t().contact.title }}
+    <span class="ml-4 h-px flex-1 bg-slate-300 dark:bg-navy-lighter"></span>
+  </h2>
+
+  <div scrollAnimate class="text-center max-w-md mx-auto">
+    <p class="font-mono text-teal-600 dark:text-accent text-sm mb-4">04. What's Next?</p>
+    <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-custom-lightest mb-4">
+      {{ t().contact.title }}
+    </h3>
+    <p class="text-slate-600 dark:text-slate-custom leading-relaxed mb-10">
+      {{ t().contact.subtitle }}
+    </p>
+
+    <a
+      href="mailto:ramananjoelinatokiniaina@gmail.com"
+      class="inline-block px-8 py-4 rounded border border-teal-600 dark:border-accent text-teal-600 dark:text-accent font-mono text-sm hover:bg-teal-50 dark:hover:bg-accent/10 transition-colors"
+    >
+      {{ t().contact.send }}
+    </a>
+  </div>
+
+  <!-- Built by footer -->
+  <p scrollAnimate [delay]="200" class="text-center mt-24 text-xs text-slate-400 dark:text-slate-custom-dark font-mono">
+    {{ t().footer.built }}
+  </p>
+</section>

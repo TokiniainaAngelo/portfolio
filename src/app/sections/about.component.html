@@ -1,0 +1,28 @@
+<section id="about" class="mb-24 scroll-mt-24" aria-labelledby="about-title">
+  <h2 scrollAnimate id="about-title" class="flex items-center text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-slate-custom-lightest mb-10 lg:sr-only">
+    <span class="section-number">01.</span>
+    {{ t().about.title }}
+    <span class="ml-4 h-px flex-1 bg-slate-300 dark:bg-navy-lighter"></span>
+  </h2>
+
+  <div scrollAnimate class="space-y-4">
+    @for (paragraph of t().about.paragraphs; track $index) {
+      <p class="text-slate-600 dark:text-slate-custom leading-relaxed">
+        {{ paragraph }}
+      </p>
+    }
+  </div>
+
+  <p scrollAnimate [delay]="100" class="mt-6 text-slate-600 dark:text-slate-custom leading-relaxed">
+    Here are a few technologies I've been working with recently:
+  </p>
+
+  <ul scrollAnimate [delay]="150" class="grid grid-cols-2 gap-x-4 gap-y-2 mt-4 text-sm font-mono">
+    @for (tech of technologies; track tech) {
+      <li class="flex items-center gap-2 text-slate-600 dark:text-slate-custom">
+        <span class="text-teal-600 dark:text-accent text-xs">&#9654;</span>
+        {{ tech }}
+      </li>
+    }
+  </ul>
+</section>

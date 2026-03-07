@@ -1,0 +1,41 @@
+<!-- Desktop vertical nav (hidden on mobile, visible on lg) -->
+<nav class="hidden lg:block mt-16" role="navigation" aria-label="Main navigation">
+  <ul class="flex flex-col gap-1">
+    @for (link of navLinks(); track link.id) {
+      <li>
+        <a
+          [href]="'#' + link.id"
+          class="group flex items-center gap-3 py-2 transition-all duration-200"
+          (click)="navigate($event, link.id)"
+        >
+          <span
+            class="h-px transition-all duration-200"
+            [ngClass]="scroll.activeSection() === link.id
+              ? 'w-16 bg-slate-900 dark:bg-slate-custom-lightest'
+              : 'w-8 bg-slate-400 dark:bg-slate-custom-dark group-hover:w-16 group-hover:bg-slate-700 dark:group-hover:bg-slate-custom-light'"
+          ></span>
+          <span
+            class="text-xs font-bold uppercase tracking-widest transition-colors duration-200"
+            [ngClass]="scroll.activeSection() === link.id
+              ? 'text-slate-900 dark:text-slate-custom-lightest'
+              : 'text-slate-500 dark:text-slate-custom-dark group-hover:text-slate-800 dark:group-hover:text-slate-custom-lightest'"
+          >
+            {{ link.label }}
+          </span>
+        </a>
+      </li>
+    }
+  </ul>
+</nav>
+
+<!-- Controls row -->
+<div class="flex items-center gap-3 mt-6 lg:mt-0">
+  <button
+    (click)="i18n.toggle()"
+    class="px-2 py-1 text-xs font-mono font-semibold rounded text-slate-500 dark:text-slate-custom-dark hover:text-teal-600 dark:hover:text-accent transition-colors"
+    [attr.aria-label]="i18n.lang() === 'en' ? 'Passer en francais' : 'Switch to English'"
+  >
+    {{ i18n.lang() === "en" ? "FR" : "EN" }}
+  </button>
+  <app-theme-toggle />
+</div>

@@ -1,0 +1,42 @@
+<section id="projects" class="mb-24 scroll-mt-24" aria-labelledby="projects-title">
+  <h2 scrollAnimate id="projects-title" class="flex items-center text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-slate-custom-lightest mb-10 lg:sr-only">
+    <span class="section-number">03.</span>
+    {{ t().projects.title }}
+    <span class="ml-4 h-px flex-1 bg-slate-300 dark:bg-navy-lighter"></span>
+  </h2>
+
+  <div class="space-y-2">
+    @for (project of t().projects.items; track project.title; let i = $index) {
+      <article
+        scrollAnimate
+        [delay]="i * 80"
+        class="hover-card group"
+      >
+        <!-- Subtitle / Context -->
+        <p class="text-xs font-mono uppercase tracking-wider text-slate-400 dark:text-slate-custom-dark mb-2">
+          {{ project.subtitle }}
+        </p>
+
+        <!-- Title -->
+        <h3 class="text-base font-medium text-slate-800 dark:text-slate-custom-lightest group-hover:text-teal-600 dark:group-hover:text-accent transition-colors mb-2 flex items-center gap-2">
+          {{ project.title }}
+          @if (project.featured) {
+            <span class="inline-block w-1.5 h-1.5 rounded-full bg-teal-500 dark:bg-accent"></span>
+          }
+        </h3>
+
+        <!-- Description -->
+        <p class="text-sm text-slate-600 dark:text-slate-custom leading-relaxed mb-4">
+          {{ project.description }}
+        </p>
+
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2">
+          @for (tech of project.tech; track tech) {
+            <span class="tech-tag">{{ tech }}</span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>
