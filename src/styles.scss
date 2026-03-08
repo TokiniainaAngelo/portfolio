@@ -38,11 +38,11 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: theme('colors.slate.400') transparent;
+  scrollbar-color: theme("colors.slate.400") transparent;
 }
 
 .dark {
-  scrollbar-color: theme('colors.navy.lighter') transparent;
+  scrollbar-color: theme("colors.navy.lighter") transparent;
 }
 
 /* Focus */
@@ -58,7 +58,6 @@ html {
   z-index: 30;
   transition: background 0.3s;
 }
-
 /* Section number prefix */
 .section-number {
   @apply font-mono text-teal-600 dark:text-accent text-sm mr-2;
