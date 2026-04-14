@@ -32,6 +32,7 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
       statsProjectsLabel: "Projects delivered",
       statsClients: "3+",
       statsClientsLabel: "Enterprise clients",
+      techIntro: "Here are a few technologies I've been working with recently",
     },
     projects: {
       title: "Selected projects",
@@ -224,6 +225,7 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
       statsProjectsLabel: "Projets livrés",
       statsClients: "3+",
       statsClientsLabel: "Clients enterprise",
+      techIntro: "Voici un aperçu des technologies avec lesquelles je travaille activement",
     },
     projects: {
       title: "Projets sélectionnés",

@@ -1,4 +1,4 @@
-export type Lang = 'en' | 'fr';
+export type Lang = "en" | "fr";
 
 export interface NavTranslations {
   about: string;
@@ -28,6 +28,7 @@ export interface AboutTranslations {
   statsProjectsLabel: string;
   statsClients: string;
   statsClientsLabel: string;
+  techIntro: string;
 }
 
 export interface ProjectItem {
