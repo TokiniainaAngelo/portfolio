@@ -1,14 +1,14 @@
-import { Component, inject, computed } from '@angular/core';
-import { NgClass } from '@angular/common';
-import { ThemeToggleComponent } from './theme-toggle.component';
-import { TranslationService } from '../../core/services/translation.service';
-import { ScrollService } from '../../core/services/scroll.service';
+import { Component, inject, computed } from "@angular/core";
+import { NgClass } from "@angular/common";
+import { ThemeToggleComponent } from "./theme-toggle.component";
+import { TranslationService } from "../../core/services/translation.service";
+import { ScrollService } from "../../core/services/scroll.service";
 
 @Component({
-  selector: 'app-navbar',
+  selector: "app-navbar",
   standalone: true,
   imports: [NgClass, ThemeToggleComponent],
-  templateUrl: './navbar.component.html',
+  templateUrl: "./navbar.component.html",
 })
 export class NavbarComponent {
   protected readonly i18n = inject(TranslationService);
@@ -17,10 +17,11 @@ export class NavbarComponent {
   readonly navLinks = computed(() => {
     const t = this.i18n.translations().nav;
     return [
-      { id: 'about', label: t.about, num: '01' },
-      { id: 'experience', label: t.experience, num: '02' },
-      { id: 'projects', label: t.projects, num: '03' },
-      { id: 'contact', label: t.contact, num: '04' },
+      { id: "about", label: t.about, num: "01" },
+      { id: "experience", label: t.experience, num: "02" },
+      { id: "projects", label: t.projects, num: "03" },
+      { id: "skills", label: t.skills, num: "04" },
+      { id: "contact", label: t.contact, num: "05" },
     ];
   });
 
