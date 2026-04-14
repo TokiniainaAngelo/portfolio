@@ -84,7 +84,7 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
     },
     skills: {
       title: "Skills & Expertise",
-      subtitle: "Technologies and methodologies I work with daily to deliver high-quality solutions.",
+      subtitle: "Technologies, tools, and practices I use to design and scale reliable, maintainable systems.",
       categories: [
         {
           name: "Frontend & Mobile",
@@ -94,15 +94,15 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
         {
           name: "Backend & APIs",
           icon: "server",
-          items: ["Node.js", "NestJS", "Express.js", "MongoDB", "REST API", "WebSocket", "Jest"],
+          items: ["Node.js", "NestJS", "Express.js", "MongoDB", "REST APIs", "WebSockets", "Jest"],
         },
         {
           name: "Architecture & Patterns",
           icon: "blocks",
-          items: ["DDD", "CQRS", "Event Sourcing", "Microservices", "Microfrontend"],
+          items: ["DDD", "CQRS", "Event Sourcing", "Microservices", "Microfrontends", "Clean Architecture"],
         },
         {
-          name: "Event-Driven & Messaging",
+          name: "Event-driven & Messaging",
           icon: "zap",
           items: ["RabbitMQ", "Kafka", "WarpStream", "EventStoreDB"],
         },
@@ -112,9 +112,14 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
           items: ["Docker", "AWS (S3, SES, SNS)", "Kong API Gateway", "CI/CD", "Git"],
         },
         {
+          name: "Tools & Productivity",
+          icon: "tool",
+          items: ["Nx", "Storybook", "Clerk", "Claude / Claude Code"],
+        },
+        {
           name: "Methods & Leadership",
           icon: "users",
-          items: ["Agile / Scrum", "Code Review", "Technical Leadership", "Team Mentoring", "Storybook"],
+          items: ["Agile / Scrum", "Code reviews", "Technical leadership", "Mentoring", "Architecture decisions"],
         },
       ],
     },
@@ -271,8 +276,8 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
       ],
     },
     skills: {
-      title: "Competences & Expertise",
-      subtitle: "Technologies et methodologies que j'utilise au quotidien pour livrer des solutions de qualite.",
+      title: "Compétences & Expertise",
+      subtitle: "Technologies, outils et pratiques que j’utilise pour concevoir et faire évoluer des systèmes fiables et maintenables.",
       categories: [
         {
           name: "Frontend & Mobile",
@@ -282,15 +287,15 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
         {
           name: "Backend & APIs",
           icon: "server",
-          items: ["Node.js", "NestJS", "Express.js", "MongoDB", "REST API", "WebSocket", "Jest"],
+          items: ["Node.js", "NestJS", "Express.js", "MongoDB", "REST API", "WebSockets", "Jest"],
         },
         {
           name: "Architecture & Patterns",
           icon: "blocks",
-          items: ["DDD", "CQRS", "Event Sourcing", "Microservices", "Microfrontend"],
+          items: ["DDD", "CQRS", "Event Sourcing", "Microservices", "Microfrontends", "Clean Architecture"],
         },
         {
-          name: "Evenementiel & Messaging",
+          name: "Événementiel & Messaging",
           icon: "zap",
           items: ["RabbitMQ", "Kafka", "WarpStream", "EventStoreDB"],
         },
@@ -300,9 +305,14 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
           items: ["Docker", "AWS (S3, SES, SNS)", "Kong API Gateway", "CI/CD", "Git"],
         },
         {
-          name: "Methodes & Leadership",
+          name: "Outils & Productivité",
+          icon: "tool",
+          items: ["Nx", "Storybook", "Clerk", "Claude / Claude Code"],
+        },
+        {
+          name: "Méthodes & Leadership",
           icon: "users",
-          items: ["Agile / Scrum", "Revue de code", "Leadership technique", "Mentorat", "Storybook"],
+          items: ["Agile / Scrum", "Revue de code", "Leadership technique", "Mentorat", "Décisions d’architecture"],
         },
       ],
     },
