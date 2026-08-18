@@ -35,51 +35,115 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
       techIntro: "Here are a few technologies I've been working with recently",
     },
     projects: {
-      title: "Selected projects",
-      subtitle: "A selection of projects demonstrating my ability to design and scale complex production systems.",
+      title: "Selected Projects",
+      subtitle: "A selection of projects showcasing my experience in Full Stack development, business applications and system architecture.",
+
       problemLabel: "Challenge",
       solutionLabel: "Solution",
       impactLabel: "Impact",
+
       items: [
         {
-          title: "Real-time logistics platform",
-          subtitle: "Enterprise system — Air France",
-          description: "Logistics management system designed to handle complex operational flows and high data volumes in a critical environment.",
-          problem: "Need for a system capable of handling complex logistics operations with real-time tracking and large-scale data processing.",
-          solution: "Built a microservices architecture with NestJS, advanced MongoDB aggregation pipelines, and AWS integration for document management.",
-          impact: "Improved operational visibility, efficient large-scale data processing, and increased system reliability.",
-          tech: ["Angular", "NestJS", "MongoDB", "AWS S3/SES", "Microservices", "Jest"],
+          title: "TMS Platform",
+          subtitle: "Transport management and execution system",
+          description:
+            "A transport management platform covering the entire operational lifecycle, from request management and planning to field execution. The system combines a web application for management and planning with a mobile application dedicated to execution and real-time data reporting.",
+
+          problem:
+            "Managing transport operations requires coordinating multiple stages and stakeholders, from receiving requests to field execution. The platform needed to ensure reliable information flow between management and operational teams, including in environments with limited connectivity.",
+
+          solution:
+            "Full Stack development of the web platform using Angular and NestJS, along with contributions to the application's architecture. As the Tech Lead for the mobile application, I designed and led the technical implementation of an Ionic and Capacitor application based on an offline-first approach using IndexedDB and data synchronization. The architecture relies on DDD, CQRS, Clean Architecture, Onion Architecture and a microservices approach, with asynchronous and real-time communication through RabbitMQ, Kafka and WebSocket.",
+
+          impact:
+            "Implementation of a platform covering the main stages of the transport process, with a clear separation between management tools and field operations. The architecture addresses scalability, asynchronous processing, real-time communication and operational continuity on mobile devices.",
+
+          tech: [
+            "Angular",
+            "NestJS",
+            "MongoDB",
+            "Ionic",
+            "Capacitor",
+            "IndexedDB",
+            "RabbitMQ",
+            "Kafka",
+            "EventStoreDB",
+            "WebSocket",
+            "Kong API Gateway",
+            "Clerk",
+            "AWS S3",
+            "AWS SES",
+            "AWS SNS",
+            "Jest",
+            "Playwright",
+            "Storybook",
+            "DDD",
+            "CQRS",
+            "Clean Architecture",
+            "Onion Architecture",
+            "Microservices",
+          ],
+
           featured: true,
         },
+
         {
-          title: "Offline-first mobile application",
-          subtitle: "Enterprise field platform",
-          description: "Cross-platform mobile solution enabling field teams to operate offline with reliable data synchronization.",
-          problem: "Field teams needed to operate without network connectivity while ensuring data consistency.",
-          solution: "Led development of a mobile app using Angular, Ionic, and Capacitor with IndexedDB for offline persistence.",
-          impact: "Reliable field operations, controlled synchronization, and improved team practices through code reviews.",
-          tech: ["Angular", "Ionic", "Capacitor", "IndexedDB", "NestJS", "MongoDB"],
+          title: "Agi'Log Portal",
+          subtitle: "Internal logistics platform — Air France",
+          description:
+            "A business platform designed to manage internal transportation and logistics operations involving aeronautical equipment and components. The system centralizes and processes data from multiple APIs and internal tools within a complex business environment.",
+
+          problem:
+            "Logistics operations relied on data coming from multiple internal systems. The platform needed to retrieve, transform and leverage this data while handling complex business rules and significant data volumes.",
+
+          solution:
+            "Full Stack development of Angular and NestJS features, including complex business interfaces, integration with internal APIs and tools, and data retrieval and transformation mechanisms. MongoDB is used to centralize and process data through an approach inspired by ELT workflows. Complete documentation of data integration and transformation mechanisms was produced in Confluence.",
+
+          impact:
+            "Improved centralization and use of data from multiple internal systems, providing tools adapted to logistics processes and the complexity of the aeronautical domain. The documentation of data flows also supports the understanding and maintenance of integration mechanisms.",
+
+          tech: ["Angular", "NestJS", "MongoDB", "PrimeNG", "PrimeFlex", "AWS S3", "AWS SES", "Jest", "Git", "Bitbucket", "Jira", "Confluence"],
+
           featured: true,
         },
+
         {
-          title: "Event-driven backend architecture",
-          subtitle: "Distributed system with DDD & CQRS",
-          description: "Event-driven microservices architecture designed for complex and evolving business domains.",
-          problem: "A growing application required a scalable and maintainable architecture to handle complex business logic.",
-          solution: "Designed event-driven microservices using Event Sourcing with EventStoreDB, Kafka, and RabbitMQ.",
-          impact: "Improved scalability, service decoupling, and clearer domain boundaries.",
-          tech: ["NestJS", "EventStoreDB", "RabbitMQ", "Kafka", "MongoDB", "Docker"],
+          title: "Innovation Campus",
+          subtitle: "University website and administration platform",
+          description: "A digital platform combining a responsive public-facing website with an administration area designed to manage key academic activities.",
+
+          problem:
+            "The institution needed a modern web presence to showcase its activities while also requiring a centralized tool to manage registrations, schedules, teachers and students.",
+
+          solution:
+            "Full Stack development using Next.js for the web interfaces and NestJS for backend services. An administration platform was implemented to manage registrations, schedules, teachers and students. MongoDB is used for data management, while Docker is used to containerize the application.",
+
+          impact:
+            "Centralization of key administrative operations within a single platform while providing a modern and responsive public interface adapted to presenting the institution.",
+
+          tech: ["Next.js", "NestJS", "MongoDB", "Docker", "Responsive Design", "Administration System"],
+
           featured: true,
         },
+
         {
-          title: "API gateway & service orchestration",
-          subtitle: "Centralized platform",
-          description: "Unified entry layer to secure and orchestrate communication between microservices.",
-          problem: "Multiple services required centralized API management, authentication, and rate limiting.",
-          solution: "Integrated Kong API Gateway with advanced configuration, AWS SNS, and Clerk for authentication.",
-          impact: "Centralized flows, improved security, and simplified overall architecture.",
-          tech: ["Kong", "AWS SNS", "Clerk", "NestJS", "Docker", "CI/CD"],
-          featured: false,
+          title: "Planeo",
+          subtitle: "Multi-tenant appointment booking platform",
+          description:
+            "A web-based appointment booking platform designed for the public and service providers. It includes a responsive Front Office for users and a Back Office allowing administrators to manage their services and data through a multi-tenant approach.",
+
+          problem:
+            "The platform needed to allow users to easily search for services and book appointments while providing each service provider with a dedicated administration space to independently manage their own data and activities.",
+
+          solution:
+            "Full Stack development using Angular for both the Front Office and Back Office interfaces, and Express for backend services. A multi-tenant model was implemented to isolate data and features between service providers. MongoDB is used for data management and Docker for application containerization and deployment.",
+
+          impact:
+            "Delivery of a public platform combining a responsive appointment booking experience with an administration tool that enables multiple service providers to independently manage their activities.",
+
+          tech: ["Angular", "Express", "MongoDB", "Docker", "Responsive Design", "Multi-tenant Architecture"],
+
+          featured: true,
         },
       ],
     },
@@ -229,51 +293,115 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
     },
     projects: {
       title: "Projets sélectionnés",
-      subtitle: "Une sélection de projets illustrant ma capacité à concevoir et faire évoluer des systèmes complexes en production.",
+      subtitle: "Une sélection de projets illustrant mon expérience en développement Full Stack, conception d'applications métier et architecture de systèmes.",
+
       problemLabel: "Défi",
       solutionLabel: "Solution",
       impactLabel: "Impact",
+
       items: [
         {
-          title: "Plateforme logistique temps réel",
-          subtitle: "Système enterprise — Air France",
-          description: "Système de gestion logistique conçu pour gérer des flux opérationnels complexes et des volumes de données élevés dans un contexte critique.",
-          problem: "Besoin d’un système capable de gérer des opérations logistiques complexes avec suivi en temps réel et traitement de volumes importants de données.",
+          title: "Plateforme TMS",
+          subtitle: "Système de gestion et d'exécution des opérations de transport",
+          description:
+            "Plateforme de gestion du transport couvrant l'ensemble du cycle opérationnel, depuis la gestion des demandes et la planification jusqu'à l'exécution des opérations sur le terrain. Le système repose sur une application web destinée à la gestion et à la planification, ainsi qu'une application mobile dédiée à l'exécution et aux remontées d'informations en temps réel.",
+
+          problem:
+            "La gestion des opérations de transport nécessite de coordonner plusieurs étapes et acteurs, depuis la réception des demandes jusqu'à leur exécution sur le terrain. La plateforme devait assurer une circulation fiable des informations entre les équipes de gestion et les équipes opérationnelles, y compris dans des contextes de connectivité limitée.",
+
           solution:
-            "Développement d’une architecture microservices avec NestJS, utilisation avancée des pipelines d’agrégation MongoDB et intégration AWS pour la gestion documentaire.",
-          impact: "Amélioration du suivi opérationnel, traitement efficace de données à grande échelle et meilleure fiabilité globale du système.",
-          tech: ["Angular", "NestJS", "MongoDB", "AWS S3/SES", "Microservices", "Jest"],
+            "Développement Full Stack de la plateforme web avec Angular et NestJS, ainsi que participation à la conception de son architecture applicative. En tant que Tech Lead sur la partie mobile, conception et pilotage technique d'une application Ionic et Capacitor reposant sur une approche offline-first avec IndexedDB et synchronisation des données. L'architecture s'appuie sur DDD, CQRS, Clean Architecture, Onion Architecture et une approche microservices, avec des mécanismes de communication asynchrone et temps réel utilisant RabbitMQ, Kafka et WebSocket.",
+
+          impact:
+            "Mise en place d'une plateforme couvrant les principales étapes du processus de transport, avec une séparation claire entre les outils de gestion et les opérations terrain. L'architecture prend en compte les besoins d'évolutivité, de traitement asynchrone, de communication en temps réel et de continuité des opérations sur mobile.",
+
+          tech: [
+            "Angular",
+            "NestJS",
+            "MongoDB",
+            "Ionic",
+            "Capacitor",
+            "IndexedDB",
+            "RabbitMQ",
+            "Kafka",
+            "EventStoreDB",
+            "WebSocket",
+            "Kong API Gateway",
+            "Clerk",
+            "AWS S3",
+            "AWS SES",
+            "AWS SNS",
+            "Jest",
+            "Playwright",
+            "Storybook",
+            "DDD",
+            "CQRS",
+            "Clean Architecture",
+            "Onion Architecture",
+            "Microservices",
+          ],
+
           featured: true,
         },
+
         {
-          title: "Application mobile offline-first",
-          subtitle: "Plateforme terrain enterprise",
-          description: "Solution mobile cross-platform permettant aux équipes terrain de travailler hors ligne avec synchronisation fiable.",
-          problem: "Les équipes terrain devaient pouvoir continuer leurs opérations sans connexion réseau tout en garantissant la cohérence des données.",
-          solution: "Conception et pilotage d’une application mobile avec Angular, Ionic et Capacitor, utilisant IndexedDB pour la persistance offline.",
-          impact: "Fiabilité des opérations terrain, synchronisation maîtrisée et montée en compétence de l’équipe via pratiques de code review.",
-          tech: ["Angular", "Ionic", "Capacitor", "IndexedDB", "NestJS", "MongoDB"],
+          title: "Portail Agi'Log",
+          subtitle: "Plateforme logistique interne — Air France",
+          description:
+            "Plateforme métier destinée à la gestion des transports internes et des opérations logistiques liées aux matériels et composants aéronautiques. Le système centralise et traite des données provenant de différentes API et outils internes dans un contexte métier complexe.",
+
+          problem:
+            "Les opérations logistiques reposaient sur des données issues de plusieurs systèmes internes. La plateforme devait assurer leur récupération, leur transformation et leur exploitation tout en gérant une forte complexité métier et des volumes de données importants.",
+
+          solution:
+            "Développement Full Stack de fonctionnalités Angular et NestJS, incluant des interfaces métier complexes, l'intégration avec des API et outils internes, ainsi que des mécanismes de récupération et de transformation des données. MongoDB est utilisé pour centraliser et exploiter les données selon une approche inspirée des processus ELT. Documentation complète des mécanismes d'intégration et de transformation des données dans Confluence.",
+
+          impact:
+            "Centralisation et meilleure exploitation des données issues de différents systèmes internes, avec des outils adaptés aux processus logistiques et à la complexité métier du domaine aéronautique. La documentation des flux de données facilite également la compréhension et la maintenance des mécanismes d'intégration.",
+
+          tech: ["Angular", "NestJS", "MongoDB", "PrimeNG", "PrimeFlex", "AWS S3", "AWS SES", "Jest", "Git", "Bitbucket", "Jira", "Confluence"],
+
           featured: true,
         },
+
         {
-          title: "Architecture backend event-driven",
-          subtitle: "Système distribué avec DDD & CQRS",
-          description: "Architecture de microservices orientée événements conçue pour gérer une logique métier complexe et évolutive.",
-          problem: "Une application en croissance nécessitait une architecture capable de gérer la complexité métier tout en restant scalable et maintenable.",
-          solution: "Mise en place de microservices avec Event Sourcing, utilisant EventStoreDB, Kafka et RabbitMQ avec des frontières de domaine claires.",
-          impact: "Scalabilité accrue, découplage des services et meilleure structuration du domaine métier.",
-          tech: ["NestJS", "EventStoreDB", "RabbitMQ", "Kafka", "MongoDB", "Docker"],
+          title: "Innovation Campus",
+          subtitle: "Plateforme web et système d'administration universitaire",
+          description:
+            "Plateforme numérique comprenant un site vitrine public responsive ainsi qu'un espace d'administration destiné à la gestion des principales activités académiques.",
+
+          problem:
+            "L'établissement avait besoin d'une présence web moderne pour présenter ses activités, tout en disposant d'un outil centralisé permettant de gérer les inscriptions, les emplois du temps, les enseignants et les étudiants.",
+
+          solution:
+            "Développement d'une plateforme Full Stack avec Next.js pour les interfaces web et NestJS pour les services backend. Mise en place d'un Back Office permettant l'administration des inscriptions, des emplois du temps, des enseignants et des étudiants. MongoDB est utilisé pour la gestion des données et Docker pour la conteneurisation de l'application.",
+
+          impact:
+            "Centralisation des principales opérations administratives au sein d'un outil unique, tout en offrant une interface publique moderne, responsive et adaptée à la présentation de l'établissement.",
+
+          tech: ["Next.js", "NestJS", "MongoDB", "Docker", "Responsive Design", "Administration System"],
+
           featured: true,
         },
+
         {
-          title: "API Gateway & orchestration de services",
-          subtitle: "Plateforme de gestion centralisée",
-          description: "Mise en place d’une couche d’entrée unifiée pour sécuriser et orchestrer les communications entre microservices.",
-          problem: "Multiplication des services nécessitant une gestion centralisée de l’authentification, du routing et du rate limiting.",
-          solution: "Intégration de Kong API Gateway avec configuration avancée, utilisation de AWS SNS et gestion de l’authentification via Clerk.",
-          impact: "Centralisation des flux, amélioration de la sécurité et simplification de l’architecture globale.",
-          tech: ["Kong", "AWS SNS", "Clerk", "NestJS", "Docker", "CI/CD"],
-          featured: false,
+          title: "Planeo",
+          subtitle: "Plateforme multi-tenant de prise de rendez-vous",
+          description:
+            "Plateforme web de prise de rendez-vous destinée au public et aux prestataires de services. Elle comprend un espace Front Office responsive pour les utilisateurs ainsi qu'un Back Office permettant aux administrateurs de gérer leurs services et leurs données selon une logique multi-tenant.",
+
+          problem:
+            "La plateforme devait permettre aux utilisateurs de rechercher des services et de prendre des rendez-vous simplement, tout en donnant à chaque prestataire un espace d'administration dédié pour gérer ses propres données et activités de manière indépendante.",
+
+          solution:
+            "Développement d'une application Full Stack avec Angular pour les interfaces Front Office et Back Office, et Express pour les services backend. Mise en place d'une gestion multi-tenant permettant d'isoler les données et fonctionnalités selon les prestataires. MongoDB est utilisé pour la gestion des données et Docker pour la conteneurisation et le déploiement de l'application.",
+
+          impact:
+            "Mise à disposition d'une plateforme publique combinant une expérience utilisateur responsive pour la prise de rendez-vous et un outil d'administration permettant à différents prestataires de gérer leurs activités de manière autonome.",
+
+          tech: ["Angular", "Express", "MongoDB", "Docker", "Responsive Design", "Multi-tenant Architecture"],
+
+          featured: true,
         },
       ],
     },
