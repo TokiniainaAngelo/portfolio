@@ -40,6 +40,7 @@ export interface ProjectItem {
   impact: string;
   tech: string[];
   featured: boolean;
+  link?: string;
 }
 
 export interface ProjectsTranslations {

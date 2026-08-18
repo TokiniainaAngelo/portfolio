@@ -84,11 +84,12 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
             "Microservices",
           ],
 
-          featured: true,
+          featured: false,
         },
 
         {
           title: "Agi'Log Portal",
+          link: "https://portail.agilog.net",
           subtitle: "Internal logistics platform — Air France",
           description:
             "A business platform designed to manage internal transportation and logistics operations involving aeronautical equipment and components. The system centralizes and processes data from multiple APIs and internal tools within a complex business environment.",
@@ -109,6 +110,7 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
 
         {
           title: "Innovation Campus",
+          link: "https://ic.mg/",
           subtitle: "University website and administration platform",
           description: "A digital platform combining a responsive public-facing website with an administration area designed to manage key academic activities.",
 
@@ -128,6 +130,7 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
 
         {
           title: "Planeo",
+          link: "https://planeo.mg/",
           subtitle: "Multi-tenant appointment booking platform",
           description:
             "A web-based appointment booking platform designed for the public and service providers. It includes a responsive Front Office for users and a Back Office allowing administrators to manage their services and data through a multi-tenant approach.",
@@ -341,11 +344,12 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
             "Microservices",
           ],
 
-          featured: true,
+          featured: false,
         },
 
         {
           title: "Portail Agi'Log",
+          link: "https://portail.agilog.net",
           subtitle: "Plateforme logistique interne — Air France",
           description:
             "Plateforme métier destinée à la gestion des transports internes et des opérations logistiques liées aux matériels et composants aéronautiques. Le système centralise et traite des données provenant de différentes API et outils internes dans un contexte métier complexe.",
@@ -366,6 +370,7 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
 
         {
           title: "Innovation Campus",
+          link: "https://ic.mg/",
           subtitle: "Plateforme web et système d'administration universitaire",
           description:
             "Plateforme numérique comprenant un site vitrine public responsive ainsi qu'un espace d'administration destiné à la gestion des principales activités académiques.",
@@ -386,6 +391,7 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
 
         {
           title: "Planeo",
+          link: "https://planeo.mg/",
           subtitle: "Plateforme multi-tenant de prise de rendez-vous",
           description:
             "Plateforme web de prise de rendez-vous destinée au public et aux prestataires de services. Elle comprend un espace Front Office responsive pour les utilisateurs ainsi qu'un Back Office permettant aux administrateurs de gérer leurs services et leurs données selon une logique multi-tenant.",
