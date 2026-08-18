@@ -13,10 +13,11 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
     hero: {
       greeting: "Hi, I'm",
       name: "Angelo",
-      title: "I turn complex problems into reliable systems.",
-      subtitle: "Fullstack JavaScript Lead Developer — I design and scale robust web & mobile applications using Angular, NestJS, and event-driven architectures.",
+      title: "I build web and mobile applications that solve real business problems.",
+      subtitle:
+        "Full Stack Developer with 4+ years of experience, working across frontend, backend, APIs, and databases, with a strong focus on building reliable, maintainable, and scalable solutions.",
       cta: "View my projects",
-      contact: "Contact me",
+      contact: "Get in touch",
       scrollDown: "Scroll down",
     },
     about: {
@@ -272,9 +273,9 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
     hero: {
       greeting: "Bonjour, je suis",
       name: "Angelo",
-      title: "Je transforme des problématiques complexes en systèmes fiables.",
+      title: "Je conçois des applications web et mobiles qui répondent à des besoins métier concrets.",
       subtitle:
-        "Lead Developer Fullstack JavaScript — je conçois et fais évoluer des applications web & mobile robustes, avec Angular, NestJS et des architectures orientées événements.",
+        "Développeur Full Stack avec 4+ ans d'expérience, je travaille du frontend au backend, de l'interface utilisateur aux API et aux bases de données, avec une attention particulière portée à la qualité, la fiabilité et l'évolutivité des solutions.",
       cta: "Voir mes projets",
       contact: "Me contacter",
       scrollDown: "Défiler",
