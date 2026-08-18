@@ -153,42 +153,55 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
     },
     skills: {
       title: "Skills & Expertise",
-      subtitle: "Technologies, tools, and practices I use to design and scale reliable, maintainable systems.",
+      subtitle: "Technologies, tools, and practices I use to build reliable web and mobile applications, from user interfaces to backend systems and infrastructure.",
+
       categories: [
         {
           name: "Frontend & Mobile",
           icon: "layout",
-          items: ["Angular", "TypeScript", "JavaScript", "HTML/CSS", "SCSS", "Ionic", "Capacitor", "React", "IndexedDB"],
+          items: ["Angular", "TypeScript", "JavaScript", "Ionic", "Capacitor", "HTML/CSS", "SCSS", "React", "IndexedDB", "PrimeNG", "PrimeFlex"],
         },
+
         {
           name: "Backend & APIs",
           icon: "server",
-          items: ["Node.js", "NestJS", "Express.js", "MongoDB", "REST APIs", "WebSockets", "Jest"],
+          items: ["Node.js", "NestJS", "Express.js", "REST APIs", "WebSockets", "Java", "Spring Boot", "Jest", "Playwright"],
         },
+
         {
-          name: "Architecture & Patterns",
+          name: "Databases & Data",
+          icon: "database",
+          items: ["MongoDB", "PostgreSQL", "SQL", "JPA / Hibernate", "EventStoreDB", "Data modeling", "ETL / ELT"],
+        },
+
+        {
+          name: "Architecture & Design",
           icon: "blocks",
-          items: ["DDD", "CQRS", "Event Sourcing", "Microservices", "Microfrontends", "Clean Architecture"],
+          items: ["DDD", "Clean Architecture", "CQRS", "Microservices", "Event Sourcing", "Onion Architecture", "Microfrontends"],
         },
+
         {
-          name: "Event-driven & Messaging",
+          name: "Messaging & Distributed Systems",
           icon: "zap",
-          items: ["RabbitMQ", "Kafka", "WarpStream", "EventStoreDB"],
+          items: ["RabbitMQ", "Kafka", "WarpStream", "EventStoreDB", "Event-driven Architecture"],
         },
+
         {
-          name: "DevOps & Cloud",
+          name: "Cloud, DevOps & Infrastructure",
           icon: "cloud",
-          items: ["Docker", "AWS (S3, SES, SNS)", "Kong API Gateway", "CI/CD", "Git"],
+          items: ["Docker", "AWS S3", "AWS SNS", "AWS SES", "Kong API Gateway", "CI/CD", "Git", "Bitbucket", "GitLab"],
         },
+
         {
-          name: "Tools & Productivity",
+          name: "Tools & Development",
           icon: "tool",
-          items: ["Nx", "Storybook", "Clerk", "Claude / Claude Code"],
+          items: ["Nx", "Storybook", "Clerk", "Jira", "Confluence", "Claude / Claude Code"],
         },
+
         {
           name: "Methods & Leadership",
           icon: "users",
-          items: ["Agile / Scrum", "Code reviews", "Technical leadership", "Mentoring", "Architecture decisions"],
+          items: ["Agile / Scrum", "Code Reviews", "Technical Leadership", "Mentoring", "Architecture Decisions", "Technical Documentation"],
         },
       ],
     },
@@ -413,43 +426,56 @@ export const TRANSLATIONS: Record<Lang, Translations> = {
       ],
     },
     skills: {
-      title: "Compétences & Expertise",
-      subtitle: "Technologies, outils et pratiques que j’utilise pour concevoir et faire évoluer des systèmes fiables et maintenables.",
+      title: "Skills & Expertise",
+      subtitle: "Technologies, tools, and practices I use to build reliable web and mobile applications, from user interfaces to backend systems and infrastructure.",
+
       categories: [
         {
           name: "Frontend & Mobile",
           icon: "layout",
-          items: ["Angular", "TypeScript", "JavaScript", "HTML/CSS", "SCSS", "Ionic", "Capacitor", "React", "IndexedDB"],
+          items: ["Angular", "TypeScript", "JavaScript", "Ionic", "Capacitor", "HTML/CSS", "SCSS", "React", "IndexedDB", "PrimeNG", "PrimeFlex"],
         },
+
         {
           name: "Backend & APIs",
           icon: "server",
-          items: ["Node.js", "NestJS", "Express.js", "MongoDB", "REST API", "WebSockets", "Jest"],
+          items: ["Node.js", "NestJS", "Express.js", "REST APIs", "WebSockets", "Java", "Spring Boot", "Jest", "Playwright"],
         },
+
         {
-          name: "Architecture & Patterns",
+          name: "Databases & Data",
+          icon: "database",
+          items: ["MongoDB", "PostgreSQL", "SQL", "JPA / Hibernate", "EventStoreDB", "Data modeling", "ETL / ELT"],
+        },
+
+        {
+          name: "Architecture & Design",
           icon: "blocks",
-          items: ["DDD", "CQRS", "Event Sourcing", "Microservices", "Microfrontends", "Clean Architecture"],
+          items: ["DDD", "Clean Architecture", "CQRS", "Microservices", "Event Sourcing", "Onion Architecture", "Microfrontends"],
         },
+
         {
-          name: "Événementiel & Messaging",
+          name: "Messaging & Distributed Systems",
           icon: "zap",
-          items: ["RabbitMQ", "Kafka", "WarpStream", "EventStoreDB"],
+          items: ["RabbitMQ", "Kafka", "WarpStream", "EventStoreDB", "Event-driven Architecture"],
         },
+
         {
-          name: "DevOps & Cloud",
+          name: "Cloud, DevOps & Infrastructure",
           icon: "cloud",
-          items: ["Docker", "AWS (S3, SES, SNS)", "Kong API Gateway", "CI/CD", "Git"],
+          items: ["Docker", "AWS S3", "AWS SNS", "AWS SES", "Kong API Gateway", "CI/CD", "Git", "Bitbucket", "GitLab"],
         },
+
         {
-          name: "Outils & Productivité",
+          name: "Tools & Development",
           icon: "tool",
-          items: ["Nx", "Storybook", "Clerk", "Claude / Claude Code"],
+          items: ["Nx", "Storybook", "Clerk", "Jira", "Confluence", "Claude / Claude Code"],
         },
+
         {
-          name: "Méthodes & Leadership",
+          name: "Methods & Leadership",
           icon: "users",
-          items: ["Agile / Scrum", "Revue de code", "Leadership technique", "Mentorat", "Décisions d’architecture"],
+          items: ["Agile / Scrum", "Code Reviews", "Technical Leadership", "Mentoring", "Architecture Decisions", "Technical Documentation"],
         },
       ],
     },
